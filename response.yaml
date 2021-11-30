@@ -1,9 +1,15 @@
+# Use 'regex' for regex matching and 'starts' to check if the message starts with <text>
 - regex : ^[hH]i|[dD]efine
   response : Hello, I'm Define :)
 
 - regex : noob
   response : Someone Said noob
   chat_id : -1234567891093
+  # chat_id is optional, defaults to the same chat the message was sent
 
+# This will respond to messages like
+# '/helpme'  or  '/help'
+# Will not respond to
+# 'help'  or  '//help'
 - starts : /help
   response : I can't really help now. Define is currently in Development and not for use yet.

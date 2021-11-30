@@ -1,7 +1,8 @@
 import requests
 from typing import List, Union
 
-from .extension import *
+from .Functionals import *
+from .Objects import *
 from .Gateway import GatewayStart as GStart
 
 import re

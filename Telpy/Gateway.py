@@ -1,19 +1,20 @@
-import asyncio, time
-from .extension import *
+import time
+from .Functionals import *
+from .Objects import *
 
 def GatewayStart(client,request_interval):
     available_events = ['on_message', 'on_edited_message', 'on_channel_post', 'on_edited_channel_post', 'on_inline_query', 'on_chosen_inline_result', 'on_callback_query', 'on_shipping_query', 'on_pre_checkout_query', 'on_poll', 'on_poll_answer', 'on_my_chat_member', 'on_chat_member', 'on_chat_join_request']
     events = {i:vars(client)[i] for i in vars(client) if i in available_events}
 
     while True:
-        client.get_updates(debug=True)
+        client.get_updates(debug=False)
         if client.new_updates != []:
             for i in client.new_updates:
                 print(">>>",i)
         else:
             print("No updates")
 
-        print(vars(client))
+        print(f"Client Information: {vars(client)}")
         for this_update in client.new_updates:
             if hasattr(client,'on_message') and hasattr(this_update,'message'):
                 client.on_message(this_update.message)
