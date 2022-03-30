@@ -2,13 +2,13 @@ from distutils.core import setup
 setup(
     name='Telpy',
     packages=['Telpy'],
-    version='0.1.6',
+    version='0.1.7',
     license='MIT',
     description='Telegram API Wrapper',
     author='FishballNoodles',
-    author_email='joelkhorxw@gmail.com',
+    author_email='joelkhor.work@gmail.com',
     url='https://github.com/TheReaper62/Telpy',
-    download_url='https://github.com/TheReaper62/Telpy/archive/refs/tags/v0.1.tar.gz',
+    download_url='https://github.com/TheReaper62/Telpy/archive/refs/tags/v0.1.7.tar.gz',
     keywords=['telegram', 'telegram api', 'telegram api wrapper',
               'telegram wrapper', 'telegram bot'],
     install_requires=[
@@ -25,5 +25,5 @@ setup(
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
     ],
-    long_description="Make Simple Telegram Bots. Open-source. Highly encouraged to user version 3.7 and above so that OrderedDict will work correctly. Expect flaws in order of processing Cases if using Python 3.6 (shouldn;t be too bif og a problem)"
+    long_description="Make Simple Telegram Bots. Open-source. Highly encouraged to use Python version 3.7 and above so that OrderedDict will work correctly. Expect flaws in order of processing Cases if using Python 3.6 (shouldn't be too big of a problem)"
 )

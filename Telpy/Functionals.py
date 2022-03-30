@@ -52,7 +52,7 @@ def CleanObject(object):
                 continue
             if object[i] != None:
                 new_dict[i] = object[i]
-        print(object,"\n===============\n",new_dict,"\n<>")
+        # print(object,"\n===============\n",new_dict,"\n<>")
         return new_dict
 
     else:
